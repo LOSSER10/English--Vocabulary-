@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title and logo -->
+    <title>Engilsh Janala || Best platform for learning English
+    </title>
+    <link rel="shortcut Icon" href="./logo.png">
+    <!-- Font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Daisy UI $ Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--Google font Hind siliguri -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<script src="style.css"></script>
+
+</head>
+<!-- Navbar Section -->
+<header>
+    <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+         <li>
+        <a href=""><i class="fa-solid fa-circle-question"></i>FAQ</a>
+       </li> <li>
+        <a href=""><i class="fa-solid fa-book-open"></i>Learn</a>
+       </li> <li>
+        <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+       </li>
+      </ul>
+    </div>
+    <a class="flex items-center gap-1">
+        <span>English</span>
+        <img src="./logo.png" alt="">
+        <span>Janala</span>
+    </a>
+  </div>
+  <div class="navbar-end hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 space-x-4">
+       <li>
+        <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>FAQ</a>
+       </li> <li>
+        <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i>Learn</a>
+       </li> <li>
+        <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+       </li>
+    </ul>
+  </div>
+ 
+</div>
+</header>
+<body>
+<!-- Banner section -->
+<section class="flex flex-col-reverse md:flex-row justify-between items-center gap-20 w-11/12 mx-auto">
+  <div class="content flex-1 text-center md:text-left">
+    <h2 class="text-4xl font-bold mb-8"><span class="text-sky-400">English</span> is easy!!</h2>
+    <p class="text-2xl">Ajtheke amera English sekar jatra soro kore c. Apni jodi ntun hon othoba apnar dokot barate chan , amader Interactive Lesson apnake nia jabe onno ekti Level a.</p>
+  </div>
+  <div class="image flex-1">
+    <img src="hero-student.png" alt="">
+  </div>
+</section>
+
+<!-- Lesson section -->
+<section>
+  <h2 class="text-4xl font-bold mb-8 text-center"><span class="text-sky-400 ">Let's</span> Learn Vocabulary</h2>
+
+  <div id="level-container" class="flex justify-center gap-10 flex-wrap">
+
+  </div>
+</section>
+
+<!-- Cards -->
+<section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-17  grid grid-cols-4 gap-3">
+   
+ <div class="text-center bg-sky-100 col-span-4 rounded-xl space-y-5 py-10">
+  <p class="text-[#79716B] text-2xl">তুমি এখনও কোন পাঠ নির্বাচন করোনি।</p>
+  <h2 class="font-bold text-4xl">একটি Lesson Select করুন।</h2>
+ </div>
+
+</section>
+ 
+<script src="./script/index.js"></script>
+</body>
+</html>
