@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- CSS -->
-<script src="style.css"></script>
+<link rel="stylesheet" href="style.css">
 
 </head>
 <!-- Navbar Section -->
@@ -47,6 +47,7 @@
         <span>English</span>
         <img src="./logo.png" alt="">
         <span>Janala</span>
+        <span class="font-bold text-gray-500">BY LEON(Code Practice)</span>
     </a>
   </div>
   <div class="navbar-end hidden lg:flex">
@@ -68,7 +69,7 @@
 <section class="flex flex-col-reverse md:flex-row justify-between items-center gap-20 w-11/12 mx-auto">
   <div class="content flex-1 text-center md:text-left">
     <h2 class="text-4xl font-bold mb-8"><span class="text-sky-400">English</span> is easy!!</h2>
-    <p class="text-2xl">Ajtheke amera English sekar jatra soro kore c. Apni jodi ntun hon othoba apnar dokot barate chan , amader Interactive Lesson apnake nia jabe onno ekti Level a.</p>
+    <p class="text-2xl text-[#79716B]">আজ থেকে আমরা ইংরেজি শেখার যাত্রা শুরু করেছি। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের ইন্টার‌্যাকটিভ লেসন আপনাকে নিয়ে যাবে এক নতুন স্তরে।</p>
   </div>
   <div class="image flex-1">
     <img src="hero-student.png" alt="">
@@ -84,6 +85,26 @@
   </div>
 </section>
 
+<!-- Searching -->
+<section class="flex justify-center py-10">
+<div class="join">
+  <div>
+    <label class="input validator join-item">
+     
+      <input id="input-search" type="text" placeholder="Search Vocabulary Now" required />
+    </label>
+    
+  </div>
+  <button id="btn-search" class="btn btn-primary join-item">Search</button>
+</div>
+</section>
+
+<!-- Loading spanner-->
+<section id="spinner" class="flex spinner justify-center items-center py-10 hidden">
+<span class="loading loading-bars loading-xl"></span>
+</section>
+
+
 <!-- Cards -->
 <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-17  grid grid-cols-4 gap-3">
    
@@ -93,7 +114,29 @@
  </div>
 
 </section>
- 
+
+<!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+   
+    <div id="details-container" class="space-y-5">
+      
+
+     
+      
+
+    </div>
+
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
 <script src="./script/index.js"></script>
 </body>
 </html>
